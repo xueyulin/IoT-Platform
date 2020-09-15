@@ -5,14 +5,17 @@ import platform.thing.*;
 
 
 public class Port {
-	protected HashSet<Link> links;
-	protected HashSet<Thing> things;
+	protected HashSet<Link> links = new HashSet<Link>();
+	protected HashSet<Thing> things = new HashSet<Thing>();
 	protected String data;
 	
 	public Port() {
-		this.links= new HashSet<Link>();
-		this.things= new HashSet<Thing>();
 	}
+	
+	public Port(Thing rcv) {
+		things.add(rcv);
+	}
+	
 	
 	public void addLinks(Link rcv) {
 		links.add(rcv);

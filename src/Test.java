@@ -1,6 +1,5 @@
 import platform.IoTPlatform;
-import platform.thing.Actuator;
-import platform.thing.Sensor;
+import platform.thing.*;
 
 public class Test {
 	

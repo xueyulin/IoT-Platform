@@ -3,8 +3,8 @@ import platform.port.*;
 
 public class Actuator extends Thing{
 	
-	private InputPort inputPort1=new InputPort();
-	private InputPort inputPort2=new InputPort();	
+	private InputPort inputPort1=new InputPort(this);
+	private InputPort inputPort2=new InputPort(this);
 	
 	
 	@Override

@@ -4,6 +4,9 @@ import platform.thing.*;
 
 public class InputPort extends Port{
 	
+	public InputPort() {super();}
+	public InputPort(Thing rcv) {super(rcv);}
+	
 	public void recive() {
 		for(Link link:links) {
 			data=link.getData();

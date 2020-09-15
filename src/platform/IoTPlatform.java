@@ -18,24 +18,18 @@ public class IoTPlatform {
 	public Sensor addSenosr() {
 		Sensor sensor = new Sensor();
 		sensors.add(sensor);
-		sensor.getOutputPort1().addThings(sensor);
-		sensor.getOutputPort2().addThings(sensor);
-		sensor.getOutputPort3().addThings(sensor);
 		return sensor;
 	}
 	
 	public Analyzer addAnalyzer() {
 		Analyzer analyzer = new Analyzer();
 		analyzers.add(analyzer);
-		//analyzer.getport
 		return analyzer;
 	}
 	
 	public Actuator addActuator() {
 		Actuator actuator = new Actuator();
 		actuators.add(actuator);
-		actuator.getInputPort1().addThings(actuator);
-		actuator.getInputPort2().addThings(actuator);
 		return actuator;
 	}
 	

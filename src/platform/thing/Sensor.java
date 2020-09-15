@@ -3,9 +3,9 @@ import platform.port.*;
 
 public class Sensor extends Thing{
 
-	private OutputPort outputPort1 = new OutputPort();
-	private OutputPort outputPort2 = new OutputPort();
-	private OutputPort outputPort3 = new OutputPort();
+	private OutputPort outputPort1 = new OutputPort(this);
+	private OutputPort outputPort2 = new OutputPort(this);
+	private OutputPort outputPort3 = new OutputPort(this);
 	
 	private String data1;
 	private String data2;
@@ -45,5 +45,6 @@ public class Sensor extends Thing{
 	public OutputPort getOutputPort1() {return outputPort1;}
 	public OutputPort getOutputPort2() {return outputPort2;}
 	public OutputPort getOutputPort3() {return outputPort3;}
+	public Sensor getSensor() {return this;}
 
 }
