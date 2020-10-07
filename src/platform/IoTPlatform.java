@@ -3,6 +3,7 @@ import platform.thing.*;
 import platform.port.*;
 import platform.link.Link;
 
+import java.lang.reflect.Constructor;
 import java.util.HashSet;
 
 public class IoTPlatform {
@@ -34,10 +35,20 @@ public class IoTPlatform {
 	}
 	
 	public void addLink(OutputPort rcv1,InputPort rcv2) {
-		Link link =new Link(rcv1,rcv2);
+		Link link = new Link(rcv1,rcv2);
 		rcv1.addLinks(link);
 		rcv2.addLinks(link);
 	}
 	
+	
+	//reflect to-do
+	public void reflectGenerator() throws Exception {
+		/*
+			String rcv0 = "Sensor";
+			Class c0 = Class.forName(rcv0);
+			Constructor constructor0 = c0.getConstructor();
+			Object obj0 = constructor0.newInstance();
+		*/	
+	}
 
 }
